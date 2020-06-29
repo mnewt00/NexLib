@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>dev.mnewt00</groupId>
+    <artifactId>nexlib</artifactId>
+    <version>1.0.0</version>
+    <packaging>jar</packaging>
+
+    <name>NexLib</name>
+    <description>The libraries used in a lot of mnewt00's plugins.</description>
+
+
+    <inceptionYear>2020</inceptionYear>
+
+    <developers>
+        <developer>
+            <id>mnewt00</id>
+            <name>Myles Newton</name>
+            <timezone>10</timezone>
+            <roles>
+                <role>Owner</role>
+            </roles>
+        </developer>
+    </developers>
+
+    <distributionManagement>
+        <repository>
+            <id>mnewt00</id>
+            <url>https://repo.mnewt00.tech/releases</url>
+        </repository>
+    </distributionManagement>
+
+    <issueManagement>
+        <system>GitHub</system>
+        <url>https://github.com/mnewt00/NexLib/issues</url>
+    </issueManagement>
+
+    <scm>
+        <tag>HEAD</tag>
+        <connection>scm:git:https://github.com/mnewt00/NexLib.git</connection>
+        <developerConnection>scm:git:https://github.com/mnewt00/NexLib.git</developerConnection>
+        <url>https://github.com/mnewt00/NexLib</url>
+    </scm>
+
+    <repositories>
+        <repository>
+            <id>papermc-repo</id>
+            <url>https://papermc.io/repo/repository/maven-public/</url>
+        </repository>
+        <repository>
+            <id>sonatype</id>
+            <url>https://oss.sonatype.org/content/groups/public/</url>
+        </repository>
+    </repositories>
+
+    <dependencies>
+        <dependency>
+            <groupId>org.spigotmc</groupId>
+            <artifactId>spigot-api</artifactId>
+            <version>1.8.8-R0.1-SNAPSHOT</version>
+            <scope>provided</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+            <version>1.18.12</version>
+            <scope>provided</scope>
+        </dependency>
+    </dependencies>
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-jar-plugin</artifactId>
+                <version>3.2.0</version>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <version>3.8.1</version>
+                <configuration>
+                    <source>1.8</source>
+                    <target>1.8</target>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+</project>
